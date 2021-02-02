@@ -134,7 +134,7 @@ IntegerNode = Struct.new(:value)
 FunctionCallNode = Struct.new(:name, :function_args)
 VariableNode = Struct.new(:value)
 
-#recursively crawls over recursive tree created in parser
+# recursively crawls over recursive tree created in parser
 class Generator
     def generate(node)
         case node
